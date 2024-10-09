@@ -10,9 +10,9 @@ body {
 
 :root {
     --tamanho-header: 80px; /* --nome = variável em CSS*/
-    --tamanho-banner: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px); /*calc = calcular*/ /* vh = view height */
+    --tamanho-banner: calc(60vh - var(--tamanho-header) - var(--tamanho-footer) - 2px); /*calc = calcular*/ /* vh = view height */
     --tamanho-login: calc(100vh - var(--tamanho-header) - var(--tamanho-footer) - 2px);
-    --tamanho-footer: 65px;
+    --tamanho-footer: 150px;
 }
 
 /* HEADER*/
@@ -38,7 +38,7 @@ body {
 
 .header a { /*Quero que dentro da tag header, mexa em todas as tags a */
     text-decoration: none; /*Decoração do texto*/
-    color: #E3B062;
+    color: white;
 }
 
 .agora {
@@ -57,7 +57,7 @@ body {
 .titulo {
     color: #32b9cd;
     width: fit-content; /*Largura se adequa*/
-    font-weight: 800; /*Espessura*/
+    font-weight: 500; /*Espessura*/
 }
 
 /*BANNER*/
@@ -70,14 +70,16 @@ body {
 }
 
 .banner .container {
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
     height: 100%;
 }
 
 .banner .container p {
-    width: 50%;
-    margin: 0;
+    width: 90%;
+    margin-left: 300px;
     padding: 0;
     font-size: 36px;
 }
@@ -102,7 +104,7 @@ body {
 
 .box {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -219,4 +221,26 @@ button {
     padding: 135px 30px;
     align-content: stretch;
 
+}
+
+.imagemTitulo {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textoNormal {
+    width: 550px;
+    text-align: center;
+}
+
+.version {
+    margin-bottom: 30px;
 }
