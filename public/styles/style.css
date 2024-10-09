@@ -19,7 +19,7 @@ body {
 
 .header {
     height: var(--tamanho-header);
-    border-bottom: 2px solid #32b9cd;
+    border-bottom: 4px solid #32b9cd;
 }
 
 .container {
